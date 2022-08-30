@@ -29,6 +29,7 @@ flex-direction:column;
 
 
 .parent:last-child{
+    display: flex;
     flex-direction:row;
 }
 
