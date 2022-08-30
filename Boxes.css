@@ -1,0 +1,39 @@
+div{
+
+    background-color:rebeccapurple;
+    display: inline-block;
+    color:aliceblue;
+    text-align:center;/* Test */
+}
+
+.grandparent{
+    width:100%;
+    background-color: greenyellow;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height : 30vh;
+}
+.parent{
+display:flex
+justify-content: space-evenly;
+width: 40%;
+flex-direction:column;
+}
+
+.child {
+    background-color: white;
+    height:25%;
+    width:90%;
+}
+
+
+.parent:last-child{
+    flex-direction:row;
+}
+
+
+body {
+    margin:0;
+}
+
