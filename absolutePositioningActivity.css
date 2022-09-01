@@ -1,0 +1,38 @@
+div{
+    text-align: center;
+    font-size: xX-large;
+    background-color: yellow;
+    color: fuchsia;
+    height:30px;
+    width:30px;
+    position:absolute;
+
+}
+body{
+    position: relative;
+    height:100vh;
+    margin:0;
+}
+#TopRight{
+    top:0px;
+    right:0px;
+    
+}
+#BottomLeft{
+    bottom: 0px;
+    left: 0px;
+}
+#BottomRight{
+    bottom: 0px;
+    right: 0px;
+}
+
+#center{
+    width: 300px;
+    height: 100px;
+    background-color: cyan;
+    position:fixed;
+    top: 50%;
+    left:50%;
+    margin: -50px 0px 0px -150px;;
+}
