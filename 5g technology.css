@@ -1,0 +1,74 @@
+/*https://material.io/design/material-studies/basil.html#color*/
+/*https://waymo.com/*/
+/*these are the websited you need*/
+
+body {
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    margin: 0;
+    height:100vh; /*in order to get the design you want ot get you need to remove this */
+
+}
+header{
+    background-color: whitesmoke; 
+    grid-column-start: 1 ;
+    grid-column-end: 4 ;
+    height: 550px;
+    text-align: center;
+    font-size:xx-large;
+    z-index: 4;;;
+    box-shadow: 5px 5px 5px 0px gray;
+
+}
+
+nav{
+    background-color: rgb(255, 205, 216);
+    z-index: 2;
+    box-shadow: 2px 0px 1px 0px gray;
+    
+
+}
+
+main{
+    background-color: brown;
+    height: 2050px;
+   
+}
+
+aside{
+    background-color: darkgoldenrod;
+    z-index: 2;
+    box-shadow: -2px 0px 1px 0px gray;
+    
+
+    
+
+    
+}
+
+footer{
+    background-color: darkolivegreen;
+    grid-column-start: 1 ;
+    grid-column-end: 4 ;
+    height: 100px;
+    text-align: center;
+    font-size: x-large;
+    box-shadow: 0px -3px 2px 0px gray;
+    z-index: 3;
+    
+}
+
+img {
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+<img src="http://app.netbarg.com/img/phone-in-hand-a.png" />
