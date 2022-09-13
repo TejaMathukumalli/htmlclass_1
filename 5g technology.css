@@ -17,7 +17,7 @@ header{
     height: 550px;
     text-align: center;
     font-size:xx-large;
-    z-index: 4;;;
+    z-index: 4;
     box-shadow: 5px 5px 5px 0px gray;
 
 }
@@ -33,6 +33,9 @@ nav{
 main{
     background-color: brown;
     height: 2050px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr ;
+    overflow-y: scroll;
    
 }
 
@@ -40,10 +43,6 @@ aside{
     background-color: darkgoldenrod;
     z-index: 2;
     box-shadow: -2px 0px 1px 0px gray;
-    
-
-    
-
     
 }
 
@@ -59,16 +58,58 @@ footer{
     
 }
 
-img {
-    -webkit-animation: mover 2s infinite  alternate;
-    animation: mover 2s infinite  alternate;
-}
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
-}
-<img src="http://app.netbarg.com/img/phone-in-hand-a.png" />
+.card{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: aqua;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    font-size: larger;
+    border-radius: 25px;
+    box-shadow: 5px 3px 4px 0 rgb(68, 141, 65);
+    border: 1px solid yellow;
+
+     }
+     .card h3{
+        text-align: center;
+        
+     }
+     .card p{
+        padding-left: 10px;
+        padding-right:10px;
+     }
+     .card-container {
+        grid-column-start: 2;
+        grid-column-end:3 ;
+     }
+
+     @media only screen and (max-width: 600px) {
+        header {
+          background-color: green;
+        }
+
+        main {
+            grid-column-start: 1 ;
+            grid-column-end: 4 ;
+        }
+
+        aside{
+            display:none;
+        }
+
+        body {
+            grid-template-rows: 1fr 4fr 1fr 1fr;
+            height: 116.6vh;
+        }
+
+        nav{
+            grid-row-start:3;
+            grid-row-end:4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+      }
+     
